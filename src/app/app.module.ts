@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { CartComponent } from './pages/cart/cart.component';
 import { SaleComponent } from './pages/sale/sale.component';
 import { HomeComponent } from './pages/home/home.component';
-// import {HttpClient} from '@angular/common/http/'
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    // HttpClient
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
